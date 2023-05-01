@@ -144,7 +144,7 @@ print(phrase[:idx])
 # Ai ghicit. Felicitări! Ai ales x si zarul a fost y.
 
 
-# import random
+#import random
 # dice_roll = random.randint(1, 6)
 # dice_guess = int(input("Tasteaza numarul ghicit = "))
 # if dice_guess < dice_roll:
