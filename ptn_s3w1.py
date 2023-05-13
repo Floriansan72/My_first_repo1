@@ -233,35 +233,35 @@
 # 7: 2
 # 8: 0
 
-# import random
-# list_number = []
-# number = 0
-# for i in range(9):
-#     number = random.randint(0, 9)
-#     list_number.append(number)
-# print(f"Lista cifra = {list_number}")
-# dict_num = {
-#     0: 0,
-#     1: 0,
-#     2: 0,
-#     3: 0,
-#     4: 0,
-#     5: 0,
-#     6: 0,
-#     7: 0,
-#     8: 0,
-#     9: 0}
-# def count_number(x):
-#     for i in x:
-#         s = 0
-#         for j in range(9):
-#             if i == x[j]:
-#                 s+=1
-#             dict_num[i] = s
-#     #print(f"dict_num = {dict_num}")
-#     return dict_num
-# count_number(list_number)
-# print(f"dict_num = {dict_num}")
+import random
+list_number = []
+number = 0
+for i in range(9):
+    number = random.randint(0, 9)
+    list_number.append(number)
+print(f"Lista cifra = {list_number}")
+dict_num = {
+    0: 0,
+    1: 0,
+    2: 0,
+    3: 0,
+    4: 0,
+    5: 0,
+    6: 0,
+    7: 0,
+    8: 0,
+    9: 0}
+def count_number(x):
+    for i in x:
+        s = 0
+        for j in range(9):
+            if i == x[j]:
+                s+=1
+            dict_num[i] = s
+    #print(f"dict_num = {dict_num}")
+    return dict_num
+count_number(list_number)
+print(f"dict_num = {dict_num}")
 
 # 14.Exercitiul_14
 # 14. Funcție care primește 3 numere. Returnează valoarea maximă dintre ele.
@@ -320,7 +320,7 @@
 # discount_proccent = 50.1
 # def discount_price(x):
 #     discount = discount_proccent / 100
-#     if discount <= 1:
+#     if discount <= 1 or price < 0:
 #         new_price = price - price * discount
 #         return print(f"Noul pret cu discount de {discount_proccent} % este {new_price}")
 #     else:
