@@ -181,7 +181,7 @@ print()
 # creditare_cont(suma)
 
 class Cont:
-    suma = 0
+    #suma = 0
     def __init__(self, iban, titular_cont, sold):
         self.iban = iban
         self.titular_cont = titular_cont
